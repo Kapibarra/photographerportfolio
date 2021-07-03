@@ -1,4 +1,6 @@
 import React from 'react'
+import styled from 'styled-components'
+import {AboutSection} from './AboutSection'
 
 const FaqSection = () => {
     return (
@@ -31,4 +33,9 @@ const FaqSection = () => {
 </div>
     )
 }
+
+const StyledFAQ = styled.div`
+
+`
+
 export default FaqSection
