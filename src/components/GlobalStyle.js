@@ -8,6 +8,7 @@ const GLobalStyles = createGlobalStyle`
 }
 body {
     background: #1b1b1b;
+    font-family: 'Comfortaa', cursive;
 }
 button {
     font-weight:bold;
