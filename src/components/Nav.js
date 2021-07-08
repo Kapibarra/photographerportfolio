@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Nav = () => {
     return (
         <StyledNav>
-            <h1><a href="#">Capture</a></h1>
+            <h1><a id="logo" href="#">Capture</a></h1>
             <ul>
                 <li><a>1. About Us</a></li>
                 <li><a>2. Our Work</a></li>
@@ -30,10 +30,15 @@ ul {
     display:flex;
     list-style:none;
 }
-h1 {
-    font-size: 1.5rem;
+#logo{
+    font-size: 2rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
+    color: #23d997;
+}
+li {
+    padding-left: 10rem;
+    position: relative;
 }
 `
 
