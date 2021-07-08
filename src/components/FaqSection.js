@@ -28,6 +28,7 @@ const FaqSection = () => {
             quo architecto labore totam!
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4> Payments methods?</h4>
@@ -38,6 +39,7 @@ const FaqSection = () => {
             quo architecto labore totam!
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
       <div className="question">
         <h4> what products?</h4>
@@ -48,6 +50,7 @@ const FaqSection = () => {
             quo architecto labore totam!
           </p>
         </div>
+        <div className="faq-line"></div>
       </div>
     </StyledFAQ>
   );
