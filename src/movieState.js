@@ -1,9 +1,9 @@
-import athlete from '../img/athlete-small.png'
-import theracer from '../img/theracer-small.png'
-import goodtimes from '../img/goodtimes-small.png'
-import athlete2 from '../img/athlete2.png'
-import theracer2 from '../img/the-racer2.png'
-import goodtimes2 from '../img/good-times2.png'
+import athlete from './img/athlete-small.png'
+import theracer from './img/theracer-small.png'
+import goodtimes from './img/goodtimes-small.png'
+import athlete2 from './img/athlete2.png'
+import theracer2 from './img/the-racer2.jpg'
+import goodtimes2 from './img/good-times2.jpg'
 
 export const MovieState = () => {
     return [
@@ -11,7 +11,7 @@ export const MovieState = () => {
             title: 'The Athlete',
             mainImg: athlete,
             secondaryImg: athlete2,
-            url: '/work/the-athelte',
+            url: '/work/the-athlete',
             awards: [
                 {
                     title: 'Truly A masterpiece',
