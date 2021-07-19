@@ -12,7 +12,8 @@ function App() {
     <div className="App">
       <GLobalStyle />
       <Nav />
-      <Route path="/about">
+      <Switch>
+      <Route path="/" exact>
         <AboutUs />
       </Route>
       <Route path="/work">
@@ -21,8 +22,7 @@ function App() {
       <Route path="/contact">
         <ContactUs />
       </Route>
-
-      <OurWork />
+      </Switch>
     </div>
   );
 }
