@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <GLobalStyle />
       <Nav />
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.pathname}>
       <Route path="/" exact>
         <AboutUs />
