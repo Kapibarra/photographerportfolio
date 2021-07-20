@@ -4,23 +4,15 @@ import {StyledAbout, StyledDescription, StyledImage,StyledHide} from '../styles'
 
 // Framer Motion
 import {motion} from 'framer-motion'
+import {titleAnim, fade, photoAnim} from '../Animation'
 
 const AboutSection = () => {
 // Framer motion
-const titleAnim = {
-    hidden: {opacity:0},
-    show: {opacity: 1,transition:{duration : 1}},
-
-}
-const container = {
-    hidden: {x:100},
-    show:{x:0,transition:{duration : 0.6, ease: "easeOut", staggerChildren: 1, when: "afterChildren"}}
-}
 
     return (
 <StyledAbout>
     <StyledDescription>
-        <motion.div variants={container} initial="hidden" animate="show" className="title">
+        <motion.div>
             <StyledHide>
                 <motion.h2 variants={titleAnim}>We work to make</motion.h2>
             </StyledHide>
@@ -31,11 +23,11 @@ const container = {
                 <motion.h2 variants={titleAnim}>true</motion.h2>
             </StyledHide>
         </motion.div>
-        <p> Contact us for any photography ideas that you have. We are professionals</p>
-        <button>Contact Us</button>
+        <motion.p variants={fade}> Contact us for any photography ideas that you have. We are professionals</motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
     </StyledDescription>
     <StyledImage>
-        <img src={home1} alt="camera" />
+        <motion.img src={home1} alt="camera" variants={photoAnim}/>
     </StyledImage>
 </StyledAbout>
     )
