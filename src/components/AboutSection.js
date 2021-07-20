@@ -6,28 +6,29 @@ import {StyledAbout, StyledDescription, StyledImage,StyledHide} from '../styles'
 import {motion} from 'framer-motion'
 
 const AboutSection = () => {
-
+// Framer motion
 const titleAnim = {
     hidden: {opacity:0},
-    show: {opacity: 1,transition:{duration : 2}},
+    show: {opacity: 1,transition:{duration : 1}},
 
 }
 const container = {
     hidden: {x:100},
-    show:{x:0,transition:{duration : 0.6, ease: "easeOut"}}
+    show:{x:0,transition:{duration : 0.6, ease: "easeOut", staggerChildren: 1, when: "afterChildren"}}
 }
+
     return (
 <StyledAbout>
     <StyledDescription>
         <motion.div variants={container} initial="hidden" animate="show" className="title">
             <StyledHide>
-                <motion.h2 variants={titleAnim} initial="hidden" animate="show">We work to make</motion.h2>
+                <motion.h2 variants={titleAnim}>We work to make</motion.h2>
             </StyledHide>
             <StyledHide>
-                <h2>your <span>dreams</span> come</h2>
+                <motion.h2 variants={titleAnim}>your <span>dreams</span> come</motion.h2>
             </StyledHide>
             <StyledHide>
-                <h2>true</h2>
+                <motion.h2 variants={titleAnim}>true</motion.h2>
             </StyledHide>
         </motion.div>
         <p> Contact us for any photography ideas that you have. We are professionals</p>
