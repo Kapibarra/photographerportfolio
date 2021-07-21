@@ -8,16 +8,18 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 // framer motion
 import { motion } from "framer-motion";
-import { pageAnimation, fade, photoAnim, lineAnim , slider} from "../Animation";
+import { pageAnimation, fade, photoAnim, lineAnim , slider ,sliderContainer} from "../Animation";
 
 
 const OurWork = () => {
   return (
     <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{background: '#fff'}}>
+    <motion.div variants={sliderContainer}>
     <Frame1 variants={slider}></Frame1>
     <Frame2 variants={slider}></Frame2>
     <Frame3 variants={slider}></Frame3>
     <Frame4 variants={slider}></Frame4>
+    </motion.div>
       <Movie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div className="line" variants={lineAnim}></motion.div>
