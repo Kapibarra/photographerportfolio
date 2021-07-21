@@ -1,66 +1,53 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { StyledAbout } from "../styles";
-import Toggle from './Toggle'
+import Toggle from "./Toggle";
+import {AnimateSharedLayout} from 'framer-motion'
 
 const FaqSection = () => {
   return (
     <StyledFAQ>
       <h2>
-        <span>Any</span> questions
+        <span>Any</span> questions?
       </h2>
-      <Toggle>
-      <div className="question">
-        <h4> How do i start?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor start amet consectetur nulla</p>
+      <AnimateSharedLayout>
+      <Toggle title="How do i start?">
+          <div className="answer">
+            <p>Lorem ipsum dolor start amet consectetur nulla</p>
             <p>
-            Lorem ipsum dolor start amet consectetur nulla saciendis magnam sint
-            quo architecto labore totam!
-          </p>
+              Lorem ipsum dolor start amet consectetur nulla saciendis magnam
+              sint quo architecto labore totam!
+            </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
       </Toggle>
-      <Toggle>
-      <div className="question">
-        <h4> Daily schedudle?</h4>
-        <div className="answer">
-        <p>Lorem ipsum dolor start amet consectetur nulla</p>
-          <p>
-            Lorem ipsum dolor start amet consectetur nulla saciendis magnam sint
-            quo architecto labore totam!
-          </p>
+      <Toggle title="Daily Scedudle">
+          <div className="answer">
+            <p>Lorem ipsum dolor start amet consectetur nulla</p>
+            <p>
+              Lorem ipsum dolor start amet consectetur nulla saciendis magnam
+              sint quo architecto labore totam!
+            </p>
+          </div>
+      </Toggle>
+      <Toggle title=" Payments methods?">
+          <div className="answer">
+            <p>Lorem ipsum dolor start amet consectetur nulla</p>
+            <p>
+              Lorem ipsum dolor start amet consectetur nulla saciendis magnam
+              sint quo architecto labore totam!
+            </p>
+          </div>
+      </Toggle>
+      <Toggle title="What products?">
+          <div className="answer">
+            <p>Lorem ipsum dolor start amet consectetur nulla</p>
+            <p>
+              Lorem ipsum dolor start amet consectetur nulla saciendis magnam
+              sint quo architecto labore totam!
+            </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
       </Toggle>
-      <Toggle>
-      <div className="question">
-        <h4> Payments methods?</h4>
-        <div className="answer">
-        <p>Lorem ipsum dolor start amet consectetur nulla</p>
-          <p>
-            Lorem ipsum dolor start amet consectetur nulla saciendis magnam sint
-            quo architecto labore totam!
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      </Toggle>
-      <Toggle>
-      <div className="question">
-        <h4> what products?</h4>
-        <div className="answer">
-        <p>Lorem ipsum dolor start amet consectetur nulla</p>
-          <p>
-            Lorem ipsum dolor start amet consectetur nulla saciendis magnam sint
-            quo architecto labore totam!
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      </Toggle>
+      </AnimateSharedLayout>
     </StyledFAQ>
   );
 };
