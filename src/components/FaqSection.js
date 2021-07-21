@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { StyledAbout } from "../styles";
+import Toggle from './Toggle'
 
 const FaqSection = () => {
   return (
@@ -8,50 +9,58 @@ const FaqSection = () => {
       <h2>
         <span>Any</span> questions
       </h2>
+      <Toggle>
       <div className="question">
         <h4> How do i start?</h4>
         <div className="answer">
-          <p>
-            {" "}
+          <p>Lorem ipsum dolor start amet consectetur nulla</p>
+            <p>
             Lorem ipsum dolor start amet consectetur nulla saciendis magnam sint
             quo architecto labore totam!
           </p>
         </div>
         <div className="faq-line"></div>
       </div>
+      </Toggle>
+      <Toggle>
       <div className="question">
         <h4> Daily schedudle?</h4>
         <div className="answer">
+        <p>Lorem ipsum dolor start amet consectetur nulla</p>
           <p>
-            {" "}
             Lorem ipsum dolor start amet consectetur nulla saciendis magnam sint
             quo architecto labore totam!
           </p>
         </div>
         <div className="faq-line"></div>
       </div>
+      </Toggle>
+      <Toggle>
       <div className="question">
         <h4> Payments methods?</h4>
         <div className="answer">
+        <p>Lorem ipsum dolor start amet consectetur nulla</p>
           <p>
-            {" "}
             Lorem ipsum dolor start amet consectetur nulla saciendis magnam sint
             quo architecto labore totam!
           </p>
         </div>
         <div className="faq-line"></div>
       </div>
+      </Toggle>
+      <Toggle>
       <div className="question">
         <h4> what products?</h4>
         <div className="answer">
+        <p>Lorem ipsum dolor start amet consectetur nulla</p>
           <p>
-            {" "}
             Lorem ipsum dolor start amet consectetur nulla saciendis magnam sint
             quo architecto labore totam!
           </p>
         </div>
         <div className="faq-line"></div>
       </div>
+      </Toggle>
     </StyledFAQ>
   );
 };
@@ -72,14 +81,14 @@ const StyledFAQ = styled(StyledAbout)`
     width: 100%;
   }
   .question {
-      padding:3rem 0rem;
-      cursor:pointer;
+    padding: 3rem 0rem;
+    cursor: pointer;
   }
   .answer {
-      padding:2rem 0rem;
-      p {
-          padding: 1rem 0rem;
-      }
+    padding: 2rem 0rem;
+    p {
+      padding: 1rem 0rem;
+    }
   }
 `;
 
